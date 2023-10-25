@@ -1,9 +1,15 @@
 # LMSGI-Cuaderno
-Mi cuaderno en github
+Hola bienvenido a mi cuaderno personal de:
 
+**LENGUAJE DE MARCAS Y SISTEMAS DE GESTIÓN DE INFORMACIÓN**
+
+Me llamo Carlos Sánchez Giménez y estoy utilizando Markdown como lenguaje de marcas para desarrollar mi cuaderno del modulo en GitHub
+
+---------
 # Tablas de contenido
-----
+- [Actividad UD1](ActividadUD1)
 
+----
 # Enlaces de interés
 
 [W3C](https://www.w3.org/)
