@@ -16,7 +16,7 @@ Lo que los diferencia de los lenguajes de programación es que el lenguaje de ma
 
 
 ## - **Evolución de los Lenguajes de Marcas** 
-* **[GML](GML.md)**
+* **[GML](%20GML.md)**
 * **[SGML](SGML.md)**
 
 
