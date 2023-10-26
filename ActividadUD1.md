@@ -2,7 +2,7 @@
 
 ## - **Que es un lenguaje de marcas?** ##
 
-Un **Markup Languaje** (Lenguaje de marcas) es un lenguaje informatico el cuál tiene como **función principal** codificar un texto junto con etiquetas o **marcas** las cuales definen su **estructura** y **presentación**.
+Un **Markup Language** (Lenguaje de marcas) es un lenguaje informatico el cuál tiene como **función principal** codificar un texto junto con etiquetas o **marcas** las cuales definen su **estructura** y **presentación**.
 
 Es el lenguaje que permiten y entienden los **navegadores web**. 
 
