@@ -19,8 +19,9 @@ Lo que los diferencia de los lenguajes de programación es que el lenguaje de ma
 * **[GML](%20GML.md)**
 * **[SGML](SGML.md)**
 
-sdsd
+
 ## - **Características de los lenguajes de marcas** 
+
 
 
 ## - **Características y ejemplos de los siguientes lenguajes de marcas?** 
