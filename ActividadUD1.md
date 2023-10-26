@@ -21,17 +21,31 @@ Lo que los diferencia de los lenguajes de programación es que el lenguaje de ma
 
 ## - **Características de los lenguajes de marcas** 
 
+Las principales características de los lenguajes de marcas son:
 
++ **Independientes**: Su uso no depende de ninguna plataforma de software ni hardware.
+
++ **Almacenados en Texto Plano**: Solo están compuestos por caracteres de texto.
+
++ **Flexibles**: Son lo suficientemente flexibles como para poder usarse en cualquier contexto.
+
++ **Compatibles**: Las marcas y su contenido se encuentran en el mismo documento.
+
++ **Autodescriptibles**: Las marcas y etiquetas descríben asi mismo su función.
+
++ **Organizados**: Su estructura y sintaxis por lo general suele ser organizada.
+
++ **Facil procesamiento**: El formato debe de estar estructurado dde forma que el procesamiento automático sea sencillo.
 
 ## - **Características y ejemplos de los siguientes lenguajes de marcas?** 
-* XML
-* HTML
-* JSON
-* YAML
+* [**XML**](XML.md)
+* [**HTML**](HTML.md)
+* [**JSON**](JSON.md)
+* [**YAML**](YAML.md)
 
 
 ## - **XML: definición y características del metalenguaje** 
-* prologo
-* Etiquetas
-* atributos
-* Ejemplos en XML
+* **Prologo**:
+* **Etiquetas**:
+* **Atributos**:
+* **Ejemplos en XML**:
