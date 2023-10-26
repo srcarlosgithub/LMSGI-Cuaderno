@@ -10,21 +10,25 @@ Lo que los diferencia de los lenguajes de programación es que el lenguaje de ma
 
 *Ejemplos:*
 
-_HTML_ | _XML_
+| **_HTML_** | **_XML_** | **_Markdown_** |
 
-<img src ="https://www.institutoserlog.com/wp-content/uploads/2019/08/web.jpg" alt="Los lenguajes de marcas en la creación de páginas web"/>
+![](https://www.institutoserlog.com/wp-content/uploads/2019/08/web.jpg)
+-
 
 - **Evolución de los Lenguajes de Marcas**
     * GML
     * SGML
 
+
 - **Características de los lenguajes de marcas**
+
 
 - **Características y ejemplos de los siguientes lenguajes de marcas?**
     * XML
     * HTML
     * JSON
     * YAML
+
 
 - **XML: definición y características del metalenguaje**
     * prologo
