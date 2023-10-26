@@ -6,7 +6,7 @@ Un **Markup Language** (Lenguaje de marcas) es un lenguaje informatico el cuál 
 
 Es el lenguaje que permiten y entienden los **navegadores web**. 
 
-Lo que los diferencia de los lenguajes de programación es que el lenguaje de marcas **no tiene** funciones **aritmeticas** o **variables**
+Lo que los diferencia de los lenguajes de programación es que el lenguaje de marcas **no tien   e** funciones **aritmeticas** o **variables**
 
 *Ejemplos:*
 
