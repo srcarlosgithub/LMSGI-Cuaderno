@@ -1,6 +1,6 @@
-## ACTIVIDAD UD1 ##
+# ACTIVIDAD UD1 #
 
-- **Que es un lenguaje de marcas?**
+## - **Que es un lenguaje de marcas?** ##
 
 Un **Markup Languaje** (Lenguaje de marcas) es un lenguaje informatico el cuál tiene como **función principal** codificar un texto junto con etiquetas o **marcas** las cuales definen su **estructura** y **presentación**.
 
@@ -13,25 +13,25 @@ Lo que los diferencia de los lenguajes de programación es que el lenguaje de ma
 | **_HTML_** | **_XML_** | **_Markdown_** |
 
 ![](https://www.institutoserlog.com/wp-content/uploads/2019/08/web.jpg)
--
-
-- **Evolución de los Lenguajes de Marcas**
-    * GML
-    * SGML
 
 
-- **Características de los lenguajes de marcas**
+## - **Evolución de los Lenguajes de Marcas** 
+* **[GML](GML.md)**
+* **[SGML](SGML.md)**
 
 
-- **Características y ejemplos de los siguientes lenguajes de marcas?**
-    * XML
-    * HTML
-    * JSON
-    * YAML
+## - **Características de los lenguajes de marcas** 
 
 
-- **XML: definición y características del metalenguaje**
-    * prologo
-    * Etiquetas
-    * atributos
-    * Ejemplos en XML
+## - **Características y ejemplos de los siguientes lenguajes de marcas?** 
+* XML
+* HTML
+* JSON
+* YAML
+
+
+## - **XML: definición y características del metalenguaje** 
+* prologo
+* Etiquetas
+* atributos
+* Ejemplos en XML
