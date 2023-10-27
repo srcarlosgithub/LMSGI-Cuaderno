@@ -12,6 +12,7 @@ Gracias a **HTML** y el uso de **javascript** hoy en dia podemos dar uso a las *
 
 Podemos reconocer un **fichero** html por su extensión _.html_ .
 
+![Alt text](descarga.png)
 
 ## ¿Usos y Características?
 
@@ -25,57 +26,37 @@ Podemos reconocer un **fichero** html por su extensión _.html_ .
 
 ## ¿Estructura, Ejemplo práctico y sintaxis?
 
-La **estructura** de **XML** esta compuesta por:
+La **estructura** de **HTML** esta compuesta por:
 
-+ **Prólogo**: Es opcional, indica información relativa al propio **documento** puede contener los siguientes elementos;
-    + **Version:** Indica la versión del documento XML (la ultima es 1.1).
++ **Encabezado**: Esta parte suele permanecer **invariable** mientras el usuario navega entre las paginas del sitío web. Cruza la parte superior de la página con un **gran titulo** 
 
-    + **Encoding:** Indica la codificación aplicada al documento (UTF-8).
+    + **< header >**
 
-    + **Standalone:** Indica la existencia de un esquema XML en el propio o externo documento.
++ **Menú de navegación**: **Menú** desplegable que contiene enlaces a las secciones principales del sitio web. Esta formada por botones, enlaces o pestañas.
+
+    + **< nav >**
+
++ **Contenido principal**: Es la gran parte **central** de la página web concreta.
+
+    + **< main >**
+
++ **Barra lateral**: Suele incluir algún tipo de información **adicional**, enlaces, citas, publicidad, etc...
+
+    + **< aside >**
+
++ **Pie de página**: Es la parte **inferior** de la página, suele contener letra pequeña, copyright o la información de contacto.
+
+    + **< footer >**
+
+![Alt text](estructura-basica-de-una-pagina-web-en-html.jpg)
+### EJEMPLO HTML: 
 ```
-<?xml version="1.0" encoding="UTF-8 standalone="yes"?>
-```
-
-+ **Etiquetas**: Las etiquetas son lo que hace característico a los Lenguajes de Marcas.
-
-Estas siempre van **< abiertas >** entre llaves (<>) y terminan cuando se cierran **</ abiertas>** con la misma palabra.
-
-Cuando sucede esto se le llama **elemento** en los cuales se pueden encontrar **información**, u otros **elementos**.
-
-Pueden añadirse **comentarios** en las etiquetas de esta manera < !-- comentario --> y las etiquetas pueden contener **atributos**.
-
-+ **Atributos**: Es una información **adicional** sobre la **etiqueta** en concreto.
-
-Este comienza por una **palabra** seguido por un **=** y su información adicional entre **""** .
-
-Una etiqueta **no tiene** porque **contener** un atributo pero si fuera el caso podría tener **mas de uno**.
-
-```
-<videojuego identificador="008">
-```
-En este caso la etiqueta sería **videojuego** y el atributo **identificador**
-
-
-### EJEMPLO XML: ###
-```
-<videojuegos>
-  <videojuego id="01">
-   <name>DarkSouls III</name>
-   <company>Fromsoftware</company>
-   <price>59.99€</price>
-  </videojuego>
-
-  <videojuego id="02">
-   <name>Sekiro: Shadows Die Twice</name>
-   <company>Fromsoftware</company>
-   <price>59.99€</price>
-  </videojuego>   
-
-  <videojuego id="03">
-   <name>Bloodborne</name>
-   <company>Fromsoftware</company>
-   <price>59.99€</price>
-  </videojuego>
-</videojuegos>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible'>
+    <title>Page Tittle</title>
+</head>
+</html>
 ```
