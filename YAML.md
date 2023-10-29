@@ -46,7 +46,7 @@ los cuales pueden ser los **siguientes**:
 
 ### EJEMPLO YAML: 
 ```
-GENDER: MALE
+GENDER:
 
 GPA: 3.61
 
