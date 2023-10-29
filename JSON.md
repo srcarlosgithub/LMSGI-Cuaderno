@@ -1,12 +1,16 @@
 ## ¿Que es JSON?
 
-**JSON** **(JavaScript Object Notatión)**, es el formato texto que utiliza el famoso **lenguaje de programación JavaScript** para representar los objetos.
+**JSON** **(JavaScript Object Notatión)**, es el formato texto que utiliza 
+el famoso **lenguaje de programación JavaScript** para representar los objetos.
 
-Al igual que **XML** es uno de los lenguajes de marcas mas utilizados y estandarizados para la representación y el **intercambio** de información.
+Al igual que **XML** es uno de los lenguajes de marcas mas utilizados y 
+estandarizados para la representación y el **intercambio** de información.
 
-**JSON** utiliza la misma notación o forma con la que se describen los objetos en **JavaScript**, literales de objetos, con algunas restricciones y extras.
+**JSON** utiliza la misma notación o forma con la que se describen los objetos 
+en **JavaScript**, literales de objetos, con algunas restricciones y extras.
 
-Su **principal función** es el intercambio/transporte de información entre **servicios web** y los **clientes** conectados a dichos servicios.
+Su **principal función** es el intercambio/transporte de información entre 
+**servicios web** y los **clientes** conectados a dichos servicios.
 
 ![Alt text](image-2.png)
 
@@ -16,7 +20,8 @@ Su **principal función** es el intercambio/transporte de información entre **s
 
 + Consiste principalmente en pares **"clave-valor"**.
 
-+ Los **valores** pueden estar basados en **cadenas, numeros o boleanos**, así como otros **objetos** JSON, con cualquier nivel de **anidación**.
++ Los **valores** pueden estar basados en **cadenas, numeros o boleanos**, así 
+como otros **objetos** JSON, con cualquier nivel de **anidación**.
 
 + Su formato es **flexible, ligero y facíl** de transferir por la red.
 
