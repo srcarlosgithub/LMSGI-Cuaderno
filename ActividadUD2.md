@@ -1,6 +1,15 @@
-# ACTIVIDAD UD1 #
+# ACTIVIDAD UD2 - Validación y Creación de esquemas XML.  #
 
-## - **Que es un lenguaje de marcas?** ##
+## - **Documentos XML, estructura:** ##
++ **Declaración o prólogo**
++ **Elementos**
++ **Atributos**
++ **Comentarios**
++ **Espacios de Nombres**
++ **Entidades**
++ **CDATA**
+
+-----------------------------------------
 
 Un **Markup Language** (Lenguaje de marcas) es un lenguaje informatico el cuál tiene como **función principal** codificar un texto junto con etiquetas o **marcas** las cuales definen su **estructura** y **presentación**.
 

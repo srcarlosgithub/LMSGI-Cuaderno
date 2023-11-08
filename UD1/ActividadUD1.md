@@ -47,7 +47,7 @@ Las principales características de los lenguajes de marcas son:
 ## - **XML: definición y características del metalenguaje** 
 **Prologo**: El prologo de un documento XML se ve de la siguiente manera:
 
-![Alt text](<Captura de Pantalla 2023-10-29 a las 21.01.45.png>)
+![Alt text](Captura de Pantalla 2023-10-29 a las 21.01.45.png)
 
 Este apartado es **opcional** y tiene como **función principal** dar información
 relativa al documento, tiene los siguientes elementos:     
