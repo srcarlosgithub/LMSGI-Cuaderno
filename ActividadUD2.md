@@ -1,15 +1,25 @@
-# ACTIVIDAD UD2 - Validación y Creación de esquemas XML.  #
+# ACTIVIDAD UD1 - Introducción a los Lenguajes de Marcas.  #
 
-## - **Documentos XML, estructura:** ##
-+ **Declaración o prólogo**
-+ **Elementos**
-+ **Atributos**
-+ **Comentarios**
-+ **Espacios de Nombres**
-+ **Entidades**
-+ **CDATA**
+## - **Indice** ##
++ **Qué es un Lenguaje de marcas**
++ **Evolución de los Lenguajes de marcas**
+  + **GML**
+  + **SGML**
++ **Características de los lenguajes de marcas**
++ **Características y ejemplos de los siguientes lenguajes de marcas:**
+  + **XML**
+  + **HTML**
+  + **JSON**
+  + **YAML** 
++ **XML: definición y características del metalenguaje**
+  + **Prologo**
+  + **Etiquetas**
+  + **Atributos**
+  + **Ejemplos en XML**
 
 -----------------------------------------
+
+## - **Qué es un Lenguaje de marcas?** 
 
 Un **Markup Language** (Lenguaje de marcas) es un lenguaje informatico el cuál tiene como **función principal** codificar un texto junto con etiquetas o **marcas** las cuales definen su **estructura** y **presentación**.
 
