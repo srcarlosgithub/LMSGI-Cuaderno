@@ -1,21 +1,32 @@
-# ACTIVIDAD UD1 - Introducción a los Lenguajes de Marcas.  #
+# ACTIVIDAD UD1 - Vocabularios y esquemas en XML. 
 
 ## - **Indice** ##
-+ **Qué es un Lenguaje de marcas**
-+ **Evolución de los Lenguajes de marcas**
-  + **GML**
-  + **SGML**
-+ **Características de los lenguajes de marcas**
-+ **Características y ejemplos de los siguientes lenguajes de marcas:**
-  + **XML**
-  + **HTML**
-  + **JSON**
-  + **YAML** 
-+ **XML: definición y características del metalenguaje**
-  + **Prologo**
-  + **Etiquetas**
++ **Documentos XML, estructura:**
+  + **Declaración o prólogo**   
+  + **Elementos**
   + **Atributos**
-  + **Ejemplos en XML**
+  + **Comentarios**
+  + **Espacios de Nombres**
+  + **Entidades**
+  + **CDATA**
+
++ **Validación de documentos**
+  + **DTD**
+    + **Entidades**
+    + **Anotaciones**
+    + **Elementos**
+    + **Atributos** 
+  + **XMLSchema**
+    + **Definición**
+    + **Estructura Básica**
+    + **Elementos Locales y Globales**
+    + **Elementos Simples**
+    + **Elementos Complejos**
+    + **Subelementos**
+    + **Atributos**
+    + **Restricciones**
+    + **Tipos de Datos**
+    + **Comentarios en XMLSchema**
 
 -----------------------------------------
 
