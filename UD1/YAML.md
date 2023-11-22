@@ -45,7 +45,7 @@ los cuales pueden ser los **siguientes**:
     + **Cadena**: Ansi o Unicode para datos en formato **JSON**.
 
 ### EJEMPLO YAML: 
-```
+```yaml
 GENDER:
 
 GPA: 3.61

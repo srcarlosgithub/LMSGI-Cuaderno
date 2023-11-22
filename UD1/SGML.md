@@ -19,7 +19,7 @@ A partir de **SGML** se dio:
 
 ## ¿Ejemplo práctico y sintaxix?
 
-```
+```sgml
 <etiqueta1> 
     <etiqueta2 atributo="valor">Información y Contenido</etiqueta2>
     <etiqueta3>Texto..</etiqueta3>

@@ -50,7 +50,7 @@ La **estructura** de **HTML** esta compuesta por:
 
 ![Alt text](estructura-basica-de-una-pagina-web-en-html.jpg)
 ### EJEMPLO HTML: 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>

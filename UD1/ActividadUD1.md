@@ -112,7 +112,7 @@ Los **atributos** de las **etiquetas** añaden información adicional de esta:
 
 **Ejemplos en XML**:
 
-```
+```xml
 <videojuegos>
   <videojuego id="01">
    <name>DarkSouls III</name>

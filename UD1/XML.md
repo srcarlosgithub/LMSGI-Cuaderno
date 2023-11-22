@@ -57,7 +57,7 @@ En este caso la etiqueta sería **videojuego** y el atributo **identificador**
 
 
 ### EJEMPLO XML: ###
-```
+```xml
 <videojuegos>
   <videojuego id="01">
    <name>DarkSouls III</name>

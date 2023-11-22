@@ -43,7 +43,7 @@ La **estructura** de **JSON** esta compuesta por:
 
 ![Alt text](image-4.png)
 ### EJEMPLO JSON: 
-```
+```json
 {
     "libro": [
         {

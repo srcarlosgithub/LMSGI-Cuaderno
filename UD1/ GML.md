@@ -14,7 +14,7 @@ Fue creado en **1969** por **IBM** y fue adoptado de forma **primitiva**. GML **
 
 ## ¿Ejemplo práctico y sintaxix?
 
-```
+```gml
 <etiqueta1> 
     <etiqueta2 atributo="valor">Información y Contenido</etiqueta2>
     <etiqueta3>Texto..</etiqueta3>
