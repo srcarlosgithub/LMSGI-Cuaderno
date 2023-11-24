@@ -133,5 +133,3 @@ Los **atributos** de las **etiquetas** añaden información adicional de esta:
   </videojuego>
 </videojuegos>
 ```
-
-![Alt text](<Captura de Pantalla 2023-10-29 a las 21.35.42.png>)
