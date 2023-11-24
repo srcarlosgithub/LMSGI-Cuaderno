@@ -67,86 +67,13 @@ funcionalidades específicamente.**
 ------------------------------------------------------------------
 
 
-## - **Evolución de los Lenguajes de Marcas** 
-* **[GML](%20GML.md)**
-* **[SGML](SGML.md)**
+## - **Validación de documentos** 
 
-## - **Características de los lenguajes de marcas** 
-
-Las principales características de los lenguajes de marcas son:
-
-+ **Independientes**: Su uso no depende de ninguna plataforma de software ni hardware.
-
-+ **Almacenados en Texto Plano**: Solo están compuestos por caracteres de texto.
-
-+ **Flexibles**: Son lo suficientemente flexibles como para poder usarse en cualquier contexto.
-
-+ **Compatibles**: Las marcas y su contenido se encuentran en el mismo documento.
-
-+ **Autodescriptibles**: Las marcas y etiquetas descríben asi mismo su función.
-
-+ **Organizados**: Su estructura y sintaxis por lo general suele ser organizada.
-
-+ **Facil procesamiento**: El formato debe de estar estructurado dde forma que el procesamiento automático sea sencillo.
-
-## - **Características y ejemplos de los siguientes lenguajes de marcas?** 
-* [**XML**](XML.md)
-* [**HTML**](HTML.md)
-* [**JSON**](JSON.md)
-* [**YAML**](YAML.md)
-
-
-## - **XML: definición y características del metalenguaje** 
-**Prologo**: El prologo de un documento XML se ve de la siguiente manera:
-
-![Alt text](<Captura de Pantalla 2023-10-29 a las 21.01.45.png>)
-
-Este apartado es **opcional** y tiene como **función principal** dar información
-relativa al documento, tiene los siguientes elementos:     
-
-+ **version**: indica la versión XML que se esta usando "1.1".
-
-+ **encoding**: indica la codificación usada en el documento "UTF-8".
-
-+ **standalone**: indica la existencia de un esquema XML en el propio documento externo.
-
-**Etiquetas**: Las etiquetas contienen información del documento, las cuales funcionan de la siguiente manera:
-
-+ Las etiquetas deben de tener un **incio** y **final** entre los simbolos **<>**.
-
-+ A continuación esta debe de cerrarse con la misma palabra entre **/<>**.
-
-+ Llamamos **elemento** al par de etiquetas que tienen una **apertura** y **final**.
-
-+ Dentro de un elemento encontramos **información relacionada** a este.
-
-+ Las estiquetas pueden estar compuestas por **atributos** que se hablarán de 
-ellos en el siguiente apartado.
-
-+ En un documento XML solo puede haber un elemento **raíz**.
-
-+ Pueden añadirse **comentarios** a tráves de **<!--** y 
-**-->**
-
-+ Si un elemento se encuentra **vacio** puede acortarse definiendo la etiqueta
-de esta manera **< elemento/>**
-
-**Atributos**:
-
-Los **atributos** de las **etiquetas** añaden información adicional de esta:
-
-+ Un **atributo** es información **adicional** que se le da a una etiqueta en
-**concreto**
-
-+ Seguida del **simbolo =** y entre **"comillas dobles"**.
-
-+ Una **etiqueta** puede estar compuesta por **0 o más** atributos.
-
-+ Cada **atributo** contiene información, no puede estar **compuesto** por otro atributo más.
+## - **XML Schema** 
 
 **Ejemplos en XML**:
 
-```
+```XML
 <videojuegos>
   <videojuego id="01">
    <name>DarkSouls III</name>
@@ -168,4 +95,3 @@ Los **atributos** de las **etiquetas** añaden información adicional de esta:
 </videojuegos>
 ```
 
-![Alt text](<Captura de Pantalla 2023-10-29 a las 21.35.42.png>)
