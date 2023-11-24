@@ -30,19 +30,41 @@
 
 -----------------------------------------
 
-## - **Qué es un Lenguaje de marcas?** 
+## - **Documentos XML, estructura:** 
 
-Un **Markup Language** (Lenguaje de marcas) es un lenguaje informatico el cuál tiene como **función principal** codificar un texto junto con etiquetas o **marcas** las cuales definen su **estructura** y **presentación**.
+En esta **UD2**, voy a profundizar en el uso y validación de documentos XML. Para tener claro los puntos mas importantes de **XML** que redacte en la **UD1** hay que tener en cuenta los siguientes puntos:
 
-Es el lenguaje que permiten y entienden los **navegadores web**. 
+● **XML(Extensible Markup Languaje)** es un **metalenguaje** para crear otros
+lenguajes **más específicos**.
 
-Lo que los diferencia de los lenguajes de programación es que el lenguaje de marcas **no tien   e** funciones **aritmeticas** o **variables**
+● Es mantenido por la **W3C** y actualmente está en la versión **1.1**.
 
-*Ejemplos:*
+● Su **extensión** suele ser .xml y su tipo MIME es application/text o text/xml.
+* **W3C recomienda usar la versión 1.0 a no ser que se quieran usar las nuevas
+funcionalidades específicamente.**
 
-| **_HTML_** | **_XML_** | **_Markdown_** |
+###  **Su estructura:**
 
-![](https://www.institutoserlog.com/wp-content/uploads/2019/08/web.jpg)
++ La estructura de un documento XML se define por:
+
+  + **[Declaración](Declaracion.md)**
+
+  + **[Elementos](Elementos.md)**
+
+  + **[Atributos](Atributos.md)**
+
+  + **[Comentarios](Comentarios.md)**
+
+  + **[Espacios de Nombres](EspaciosdeNombres.md)**
+
+  + **[Entidades](Entidades.md)**
+
+  + **[CDATA](CDATA.md)**
+
+
+![](https://blog.webnersolutions.com/wp-content/uploads/2019/11/Demo-XMl.png)
+
+------------------------------------------------------------------
 
 
 ## - **Evolución de los Lenguajes de Marcas** 
