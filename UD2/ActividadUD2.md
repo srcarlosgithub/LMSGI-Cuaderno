@@ -185,6 +185,20 @@ carro múltiples.
 
 ## - **XML Schema** 
 
++ **INDICE**:
+
+  + **Definición**
+  + **Estructura Básica**
+  + **Elementos Locales y Globales**
+  + **Elementos Simples**
+  + **Elementos Complejos**
+  + **Subelementos**
+  + **Atributos**
+  + **Restricciones**
+  + **Tipos de Datos**
+  + **Comentarios en XMLSchema**
+
+
 Anteriormente he estado citando la **función principal** y los **puntos de interes** de validar con **DTD** aunque como mencione, DTD tiene una serie de desventajas frente a lo que a continuación voy a redactar **XML Schema** las cuales son las siguientes:
 
 + No permite validar el tipo de **dato contenido**; se guardan como cadenas.
@@ -205,29 +219,164 @@ opcionalidad.
 
 *Ejemplo de XMLSchema:*
  
+````XML Schema
+<peliculas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="pelicula.xsd">
+    <pelicula id="11111">
+        <titulo>Matrix</titulo>
+        <director>Lana Wachowski</director>
+        <sinopsis>El programador informático Thomas Anderson...</sinopsis>
+        <actores>Keanu Reeves</actores>
+        <añodeestreno>1999</añodeestreno>
+    </pelicula>
+</peliculas>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="peliculas">
+       <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pelicula" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="1" maxOccurs="unbounded">
+                                
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+       </xs:complexType> 
+    </xs:element>
+</xs:schema>
+````````
+
+El primer paso a realizar para validar nuestro XML mediante **XMLSchema** es **enlazarlo**. 
+
+Para enlazarlo se debe de enlazar **el espacio de nombres** “xs”; y establecer un esquema por defecto”**NoNamespaceSchemaLocation”;** en caso de haber más, se pueden utilizar distintos espacios de nombres.
+
+El esquema puede estar **en local**, o utilizando una URL:
+
+````XML Schema
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="peliculas">
+```````
+
+Ahora habría que crear el anterior documento citado **.xsd** de la siguiente manera:
+
+En el fichero .xsd, se establece el espacio de nombres para utilizar los elementos de XMLSchema (usando la url de W3C).
 
 
-**Ejemplos en XML**:
+Dentro de dicho fichero, **ya se declararán** los distintos elementos y atributos necesarios. Los elementos pueden ser:
 
-```XML
-<videojuegos>
-  <videojuego id="01">
-   <name>DarkSouls III</name>
-   <company>Fromsoftware</company>
-   <price>59.99€</price>
-  </videojuego>
++ **Locales:** hijos de elementos que no son el elemento raíz y solo se usan una vez.
++ **Globales:** son hijos del elemento raíz y pueden ser reutilizados.
+ 
 
-  <videojuego id="02">
-   <name>Sekiro: Shadows Die Twice</name>
-   <company>Fromsoftware</company>
-   <price>59.99€</price>
-  </videojuego>   
+ ### ELEMENTOS
 
-  <videojuego id="03">
-   <name>Bloodborne</name>
-   <company>Fromsoftware</company>
-   <price>59.99€</price>
-  </videojuego>
-</videojuegos>
-```
+Para declarar un elemento en XML SChema se usa la siguiente sintaxis
+```<xs:element name=”” type”” default=”” fixed=”” minOccurs=”0” maxOccurs=”0”/>´```
 
+
+**Donde:**
+
++ **name:** Nombre del elemento.
++ **type:** tipo de dato. Se establece si el elemento es de tipo Simple.
++ **defaul:** Valor por defecto.
++ **Fixed:** Valor del atributo en caso de que exista.
++ **minOccurs:** Número de veces mínima que puede aparecer. Por defecto 1.
++ **maxOccurs:** Número de veces máxima que puede aparecer. Por defecto 1.
+
+*NOTA: Si un elemento puede aparecer un número indeterminado se establecer el valor “unbounded”.*
+
+Un elemento puede ser dependiendo de su tipo; de **dos formas**:
+
+
+● Simple: Guarda un texto, número,fecha,etc... Se debe de establecer el atributo type o utilizar una restricción.
+● Complejo: Guarda dentro elementos hijos y se pueden establecer restricciones a las relaciones.
+ 
+ 
+ ### ELEMENTOS SIMPLES
+
+SimpleType
+Ejemplo Elemento Simple
+<xs:element name=”fecha” type=”xs:date”/>
+ 
+SimpleType
+Ejemplo Elemento Simple con restricción (Veremos más adelante)
+<xs:element name=”diaSemana”>
+  <xs:simpleType>
+     <xs:restriction base=”xs:integer”>
+          <xs:minInclusive value=”1”/>
+          <xs:maxInclusive value=”7”/>
+     </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+ 
+
+
+ ### ELEMENTOS COMPLEJOS
+
+Para declarar un elemento complejo se realiza de la siguiente forma:
+<xs:element name=”mensaje”>
+   <xs:complexType>
+       <xs:sequence>
+          <xs:element name=”para” type=”xs:string”/>
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
+ 
+Dentro de un tipo complejo se establece: ● subElementos
+● atributos.
+Un subelemento, establece la relación de los elementos contenidos con respecto al padre. Pueden ser:
+● xs:sequence: indica una secuencia de elementos obligatorios, y en el mismo orden.
+● xs:choise: señala una secuencia de elementos alternativos. Solo debe aparecer uno de
+ellos.
+● xs:all: indica una secuencia de elementos opcionales; no es obligatorio que aparezcan
+todos en el mismo orden.
+ 
+
+
+ ### ATRIBUTOS
+
+Tanto en un elemento complejo o simple, se pueden guardar atributos; siendo su sintaxis:
+<xs:attribute name=”” type””/>
+El atributo tiene los siguientes valores:
+● name: nombre del atributo.
+● type: tipo de dato.
+● use: indica su obligatoriedad; tiene los siguientes valores:
+○ required: es obligatorio.
+○ optional: es opcional.
+○ prohibited: no se puede utilizar en dicho elemento.
+● default: Permite asignar un valor por defecto.
+● fixed: determina el valor del atributo en caso de que exista.
+Hay que tener en cuenta que los atributos no tienen orden, ni cardinalidad ni pueden tener hijos. Además se pueden establecer restricciones para sus valores.
+ 
+
+ ### RESTRICCIONES
+
+ Como hemos comentado, se pueden establecer restricciones a elementos y atributos. Su sintaxis es:
+<xs:restriction base=”xs:integer”>
+   ....
+</xs:restriction>
+Dentro de un elemento restriction, se establecen facetas.
+ 
+
+ ### TIPOS DE DATOS BASICOS
+
+ ### COMENTARIOS
+
+ Se pueden establecer comentarios dentro del XMLSchema para ayudar a su comprensión; veamos un ejemplo
+<xs:element name=”mensaje”>
+<xs:annotation>
+     <xs:appInfo>Información de mensaje</xs:appInfo>
+     <xs:documentation xml:lang=”es”>
+        Mensaje a enviar
+     </xs:documentation>
+</xs:annotation>
+
+
+Donde:
+● appInfo: información del elemento o atributo.
+● documentation: documentación en detalle del elemento o atributo.
+ 
