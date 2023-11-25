@@ -292,18 +292,26 @@ Para declarar un elemento en XML SChema se usa la siguiente sintaxis
 Un elemento puede ser dependiendo de su tipo; de **dos formas**:
 
 
-● Simple: Guarda un texto, número,fecha,etc... Se debe de establecer el atributo type o utilizar una restricción.
-● Complejo: Guarda dentro elementos hijos y se pueden establecer restricciones a las relaciones.
++ **Simple:** Guarda un texto, número,fecha,etc... Se debe de establecer el atributo type o utilizar una restricción.
+
++ **Complejo:** Guarda dentro elementos hijos y se pueden establecer restricciones a las relaciones.
  
  
  ### ELEMENTOS SIMPLES
 
-SimpleType
-Ejemplo Elemento Simple
+**SimpleType**
+
+*Ejemplo Elemento Simple*
+
+````XML Schema
 <xs:element name=”fecha” type=”xs:date”/>
- 
-SimpleType
-Ejemplo Elemento Simple con restricción (Veremos más adelante)
+``````
+
+
+
+*Ejemplo Elemento Simple con restricción (Veremos más adelante)*
+
+``````XML SChema
 <xs:element name=”diaSemana”>
   <xs:simpleType>
      <xs:restriction base=”xs:integer”>
@@ -312,12 +320,14 @@ Ejemplo Elemento Simple con restricción (Veremos más adelante)
      </xs:restriction>
   </xs:simpleType>
 </xs:element>
- 
+ ``````
 
 
  ### ELEMENTOS COMPLEJOS
 
-Para declarar un elemento complejo se realiza de la siguiente forma:
+Para declarar un elemento complejo se realiza de la **siguiente forma**:
+
+``````XML SChema
 <xs:element name=”mensaje”>
    <xs:complexType>
        <xs:sequence>
@@ -325,31 +335,50 @@ Para declarar un elemento complejo se realiza de la siguiente forma:
        </xs:sequence>
    </xs:complexType>
 </xs:element>
- 
-Dentro de un tipo complejo se establece: ● subElementos
-● atributos.
-Un subelemento, establece la relación de los elementos contenidos con respecto al padre. Pueden ser:
-● xs:sequence: indica una secuencia de elementos obligatorios, y en el mismo orden.
-● xs:choise: señala una secuencia de elementos alternativos. Solo debe aparecer uno de
+ ``````
+
+
+Dentro de un tipo complejo se establece: 
+
++ **subElementos**
++ **atributos.**
+Un subelemento, establece la relación de los elementos contenidos con respecto al padre. 
+
+Pueden ser:
+
++ **xs:sequence:** indica una secuencia de elementos obligatorios, y en el mismo orden.
+
++ **xs:choise:** señala una secuencia de elementos alternativos. Solo debe aparecer uno de
 ellos.
-● xs:all: indica una secuencia de elementos opcionales; no es obligatorio que aparezcan
+
++ **xs:all:** indica una secuencia de elementos opcionales; no es obligatorio que aparezcan
 todos en el mismo orden.
  
 
 
  ### ATRIBUTOS
 
-Tanto en un elemento complejo o simple, se pueden guardar atributos; siendo su sintaxis:
+Tanto en un elemento complejo o simple, se pueden guardar atributos; **siendo su sintaxis**:
+
+```XML SChema
 <xs:attribute name=”” type””/>
+``````
+
+
 El atributo tiene los siguientes valores:
-● name: nombre del atributo.
-● type: tipo de dato.
-● use: indica su obligatoriedad; tiene los siguientes valores:
-○ required: es obligatorio.
-○ optional: es opcional.
-○ prohibited: no se puede utilizar en dicho elemento.
-● default: Permite asignar un valor por defecto.
-● fixed: determina el valor del atributo en caso de que exista.
+
++ **name:** nombre del atributo.
++ **type:** tipo de dato.
++ **use:** indica su obligatoriedad; tiene los siguientes valores:
+
+  + **required:** es obligatorio.
+  + **optional:** es opcional.
+  + **prohibited:** no se puede utilizar en dicho elemento.
+
+
++ **default:** Permite asignar un valor por defecto.
+
++ **fixed:** determina el valor del atributo en caso de que exista.
 Hay que tener en cuenta que los atributos no tienen orden, ni cardinalidad ni pueden tener hijos. Además se pueden establecer restricciones para sus valores.
  
 
@@ -366,7 +395,9 @@ Dentro de un elemento restriction, se establecen facetas.
 
  ### COMENTARIOS
 
- Se pueden establecer comentarios dentro del XMLSchema para ayudar a su comprensión; veamos un ejemplo
+ Se pueden establecer **comentarios** dentro del XMLSchema para ayudar a su comprensión; veamos un *ejemplo*
+
+ ````XML Schema
 <xs:element name=”mensaje”>
 <xs:annotation>
      <xs:appInfo>Información de mensaje</xs:appInfo>
@@ -374,9 +405,10 @@ Dentro de un elemento restriction, se establecen facetas.
         Mensaje a enviar
      </xs:documentation>
 </xs:annotation>
-
+``````
 
 Donde:
-● appInfo: información del elemento o atributo.
-● documentation: documentación en detalle del elemento o atributo.
++ **appInfo:** información del elemento o atributo.
+
++ **documentation:** documentación en detalle del elemento o atributo.
  
