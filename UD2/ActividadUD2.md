@@ -1,6 +1,6 @@
 # ACTIVIDAD UD2 - Vocabularios y esquemas en XML. 
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.anyrgb.com%2Fen-clipart-h3nvq&psig=AOvVaw2TkMkS1IoqMbgdbMM_4Zhr&ust=1700969297612000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDT28ea3oIDFQAAAAAdAAAAABAE)
+![](https://www.institutoserlog.com/wp-content/uploads/2019/08/web.jpg)
 
 
 ## - **Indice** ##
