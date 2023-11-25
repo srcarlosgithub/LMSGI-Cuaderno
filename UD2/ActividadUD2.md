@@ -1,5 +1,8 @@
 # ACTIVIDAD UD2 - Vocabularios y esquemas en XML. 
 
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.anyrgb.com%2Fen-clipart-h3nvq&psig=AOvVaw2TkMkS1IoqMbgdbMM_4Zhr&ust=1700969297612000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDT28ea3oIDFQAAAAAdAAAAABAE)
+
+
 ## - **Indice** ##
 + **Documentos XML, estructura:**
   + **Declaración o prólogo**   
@@ -384,11 +387,30 @@ Hay que tener en cuenta que los atributos no tienen orden, ni cardinalidad ni pu
 
  ### RESTRICCIONES
 
- Como hemos comentado, se pueden establecer restricciones a elementos y atributos. Su sintaxis es:
+ Como hemos comentado, se pueden establecer restricciones a elementos y atributos. **Su sintaxis es:**
+ ``````
 <xs:restriction base=”xs:integer”>
    ....
 </xs:restriction>
-Dentro de un elemento restriction, se establecen facetas.
+````````
+
+Dentro de un **elemento restriction**, se establecen facetas.
+
+| Facetas | Descripción  | 
+|----------|----------|
+| xs:length    | Longitud Fija    |
+| xs:minLength    | Longitud mínima   | 
+| xs:maxLength   |  Longitud Máxima  |
+| xs:totalDigits    | total de dígitos de un número.    |
+| xs:fractionDigits   | total dígitos decimales de un número.   |
+| xs:minExclusive    | Indica el valor mínimo que puede tomar.   |
+| xs:maxExclusive    | Indica el valor máximo que puede tomar.   |
+| xs:minInclusive    | Indica el valor debe ser mayor o igual   |
+| xs:maxInclusive    | Indica el valor debe ser menor o igual   |
+| xs:enumeration    | Lista de valores posibles (string)   |
+| xs:whiteSpace    | Determina cómo tratar los espacios en blanco.   |
+| xs:pattern    | Fija un patrón de caracteres permitidos.   |
+
  
 
  ### TIPOS DE DATOS BASICOS
