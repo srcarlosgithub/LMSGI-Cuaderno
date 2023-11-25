@@ -393,6 +393,17 @@ Dentro de un elemento restriction, se establecen facetas.
 
  ### TIPOS DE DATOS BASICOS
 
+| Tipo | Descripción  | 
+|----------|----------|
+| xs:string    | cadena de caracteres    |
+| xs:integer    | Números enteros.   | 
+| xs:decimal   |  Números decimales; usando “.” como separador.  |
+| xs:boolean    | Booleano. “true” para verdadero y “false” para lo contrario.    |
+| xs:date    | fecha con formato AAAA-MM-DD   |
+| xs:time    | hora con formato hh:mm:ss   |
+| xs:duration    | duración de tiempo en formato “PnYnMnDTnHnMnS”.   |
+
+
  ### COMENTARIOS
 
  Se pueden establecer **comentarios** dentro del XMLSchema para ayudar a su comprensión; veamos un *ejemplo*
