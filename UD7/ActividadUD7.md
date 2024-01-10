@@ -1,44 +1,54 @@
 # ACTIVIDAD UD7 - Sistemas de Gestión de Información. 
 
-![](vscode-vfs://github%2B7b2276223a312c22726566223a7b2274797065223a362c226964223a226d61696e227d7d/srcarlosgithub/LMSGI-Cuaderno/UD2)
-
+![Alt text](image-1.png)
 
 ## - **Indice** ##
-+ **Documentos XML, estructura:**
-  + **Declaración o prólogo**   
-  + **Elementos**
-  + **Atributos**
-  + **Comentarios**
-  + **Espacios de Nombres**
-  + **Entidades**
-  + **CDATA**
++ **Sistemas de gestión de información**
+  + **Características**   
+  + **Tipos**
 
-+ **Validación de documentos**
-  + **DTD**
-    + **Entidades**
-    + **Anotaciones**
-    + **Elementos**
-    + **Atributos** 
-  + **XMLSchema**
-    + **Definición**
-    + **Estructura Básica**
-    + **Elementos Locales y Globales**
-    + **Elementos Simples**
-    + **Elementos Complejos**
-    + **Subelementos**
-    + **Atributos**
-    + **Restricciones**
-    + **Tipos de Datos**
-    + **Comentarios en XMLSchema**
++ **ERP**
+  + **Características y beneficios**
+  + **Ejemplos de ERPs más conocidos**
+
++ **CRM**
+  + **Características y beneficios**
+  + **Ejemplos de CRMs más conocidos**
+
++ **BI**
+  + **Definición y componentes**
+    + **ETL**
+    + **Data WareHouse**
+    + **OLAP**
+    + **Data Mining**
+    + **DashBoard**
 
 -----------------------------------------
 
-## - **Validación de documentos** 
+## - **Sistemas de Gestión de Información** 
 
-En esta **UD2**, voy a profundizar en el uso y validación de documentos XML. En el siguiente apartado veremos el principal uso de la validación de documentos XML mediante dos principales estandares; **DTD** y **XML Schema**. 
-Ambos cumplen el mismo objetivo, **validar la estructura y el contenido** de un documento XML, aunque cada uno se forma de **diferente** manera.
+En esta **UD7**, veremos que son los **Sistemas de Gestión de Información** como funcionan y sus diferentes características.
 
-Un documento XML esta formado de manera **correcta** cuando se cumplen los siguientes puntos.
+#### **¿Que son?**
+
+Programas informáticos, diseñados para dar soporte a cualquiera de los procesos que se realizan en una empresa.
+
+Lo que permitirá a las empresas, poder mejorar sus procesos y obtener un mayor beneficio en su actividad.
+
+#### **¿Y sus Características?**
+
++ Podemos encontrar Sistemas de Gestión de Información tanto en **local** como en la **nube**.
+
++ Hay distintos tipos de Sistemas de gestión de Información como pueden ser **ERP**, **CRM** o el uso de *Businness Intelligence* **BI**.
+
+#### **Tipos de Sistemas de Gestión de Información:**
+
++ **ERP**
+
++ **CRM**
+
++ **BI**
+
 
 + **Tiene un único elemento raíz.**
 
