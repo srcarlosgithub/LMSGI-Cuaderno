@@ -12,51 +12,32 @@ No es un Sistema de Gestión de Información como tal, pero si se compone de una
 + Data Mining (Minería de datos)
 + Dashboard
 
-## - **Caracteristicas y Beneficios del uso de ERPs**
+## - **ETL**
 
-Puedo destacar entre varias las siguientes:
+*Extract, tranform and Load* es el nombre que recibe el proceso por el cual **se obtiene información de las operaciones diarias realizadas por la empresa**, se procesan y se guardan en un almacén de datos.
 
-+ **Funcional**: Un ERP debe de solucionar todos los procesos del negocio.
+ETL no es un único proceso como tal, sino puede ser **un conjunto de procesos que ayudaban a recabar información**.
 
-+ **Modular**: Cada uno de sus modulos debe de poder ser integrado de manera **opcional** e **independiente**
+## - **Data Warehouse**
 
-+ **Centralizado**: La base de datos del cual se sostiene debe de ser **única** y los datos **no han de estar replicados** en múltiples fuentes.
+Es el conjunto de datos de una compañia que **permite una correcta toma de decisiones**
 
-+ **Robusto**: Debe incorporar mecanismos que garanticen **fiabilidad** de datos.
+No solo almacena los datos **en bruto**, sino que también los procesados por un ETL.
 
-+ **Seguro**: Tiene que incorporar mecanismos que garanticen **integridad** de los datos.
+## - **OLAP**
 
-+ **Mantenible**: El sistema debe de ser apto para **mantenerse, mejorarse y ampliarse**
+*Online Analytical Procesing* el procesamiento analítico en línea nos facilita el acceso a los datos almacenados en el anterior mencionado **Data Warehouse**, el cual alimenta al minado de datos **Data Mining que posteriormente hablaremos de el.
 
-+ **Adaptable**: Tienen que ser soluciones **génericas**, lo suficientemente flexibles como para **integrarse en cualquier compañia**.
+En muchas ocasiones, los datos de OLAP vienen representados como un CUBO. 
 
-## - **Tipos de ERPs**
+![Alt text](image-2.png)
 
-+ **Genéricos**: Producto modular que facilita la escalabilidad, economicos pero excasa adaptabilidad.
+## - **Data mining**
 
-+ **Configurables**: Núcleo de sistema basado en **multiples parámetros modificables; permitiendo adaptar los procesos.
+El minado de datos o *Data mining* es el proceso el cual **busca patrones repetitivos** en grandes volúmenes de datos, los cuales normalmente son obtenidos de los almacenes de datos del **Data Warehouse**
 
-+ **A Medida**: Consistente basado en los requisitos de la empresa. Una opción de **gran inversión**.
+## - **DashBoard**
 
-## - **Beneficios**
+El DashBoard o como en España se conoce como Cuadro de Mandos, es un proceso o aplicación que facilita de forma visual ver los datos **en conjunto de forma general**, para hechar un vistazo a los datos requeridos e **incluso hacer rapidas acciones**
 
-+ Optimiza los **procesos de gestión**.
-+ Mejora la **productividad**.
-+ Simplificación de las **tecnologías de la información** de la compañía.
-+ Mejora en los **procesos de decisión** en consecuencia de la **centralización** de la información y del acceso a los datos en **tiempo real**.
-+ Reduce costes de **gestión de la información**.
-+ Facilitan la **escalabilidad del sistema**.
-+ Permiten incrementar la **seguridad de la información**.
-
-**EJEMPLO ERPs**:
-```Markdown
-+ SAP
-+ NetSuite / ERP Cloud (Oracle).
-+ SAGE
-+ Microsoft Dynamics 365 (Microsoft).
-+ IFS.
-+ ERPNext (Libre).
-+ Odoo (Libre).
-+ Apache Ofbiz (Libre).
-+ WebERP (Libre).
-```
+![Alt text](image-3.png)
