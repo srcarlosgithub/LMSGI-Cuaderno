@@ -49,6 +49,7 @@ Lo que permitirá a las empresas, poder mejorar sus procesos y obtener un mayor 
 
 + **BI**
 
+<!--
 
 + **Tiene un único elemento raíz.**
 
@@ -454,4 +455,4 @@ Donde:
 + **appInfo:** información del elemento o atributo.
 
 + **documentation:** documentación en detalle del elemento o atributo.
- 
+-->
