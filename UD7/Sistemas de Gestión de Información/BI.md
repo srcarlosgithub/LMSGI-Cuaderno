@@ -1,19 +1,16 @@
 #  **Tipos de Sistemas de Gestión de Información**
 
-## - **ERP:** 
+## - **BI (Bussines Inteligence):** 
 
-Dentro de los 3 tipos de sistemas de gestión de información, el que mas destaca y el mas utilizado son los **ERPs**.
+Bussines Inteligence o Inteligencia de Negocio son las siglas B.I por las que llaman a una serie de tecnologías que tienen un objetivo en concreto; ayudar al **proceso de dirección de una empresa**.
 
-Un ERP *(Enterprise Resource Planning)* es un **sistema informatico** el cual integra los **múltiples procesos específicos** que hay en una empresa.
+No es un Sistema de Gestión de Información como tal, pero si se compone de una **serie de sistemas** que ayudan a este proceso:
 
-**¿Como podria definir a un ERP?**
-
-
-
-
-+ Un ERP, se considera como un producto para un sistema, el cual es creado e implantado **para cubrir una necesidad** sin tener que estar dirigido y personalizado para una empresa en concreto. Este **producto** es adaptado **posteriormente** al **cliente**.
-
-+ También un ERP, se considera un producto software. Los famosos **Consultores** no solo se dedican a la **implantación de la instalación** de dicho producto software; sino que **también** a adaptar este software a **los procesos de la empresa**.
++ ETL (proceso de extracciíon de procesos)
++ Data Warehouse (almacén de datos procesados)
++ OLAP (Procesamiento analítico en línea)
++ Data Mining (Minería de datos)
++ Dashboard
 
 ## - **Caracteristicas y Beneficios del uso de ERPs**
 
