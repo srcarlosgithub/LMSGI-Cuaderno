@@ -43,11 +43,13 @@ Lo que permitirá a las empresas, poder mejorar sus procesos y obtener un mayor 
 
 #### **Tipos de Sistemas de Gestión de Información:**
 
-+ **ERP**
++  [ERP](ERP.md)
 
-+ **CRM**
++  [CRM](CRM.md)
 
-+ **BI**
++  [BL](BL.md)
+
+
 
 <!--
 
