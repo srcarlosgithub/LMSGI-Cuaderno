@@ -47,7 +47,7 @@ Lo que permitirá a las empresas, poder mejorar sus procesos y obtener un mayor 
 
 +  [CRM](CRM.md)
 
-+  [BL](BL.md)
++  [BI](BI.md)
 
 
 
