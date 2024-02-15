@@ -72,7 +72,7 @@ Su estructura es **similar** al propio HTML pero con **algunas diferencias**:
   + **No se deben insertar elementos de bloque dentro de elementos inline.**
   + **Los scripts y estilos deben ir dentro de un CDATA**
   
-  
+![Alt text](image-1.png)
 
 ----
 ##  **NAVEGADOR**
@@ -91,46 +91,54 @@ Algunos de los navegadores más **usados**:
 
   + Safari
 
+![Alt text](image-2.png)
 
  ---------------
-  + **Anotaciones**: Una **anotación**, nos permite identificar el formato de entidades que no son XML y que no se van a procesar; como puede ser el valor de un atributo.
+##  **ESTRUCTURA DE HTML**
+
+A continuación un ejemplo basico de la **estructura** de un documento **HTML**:
+
+```HTML
+<!DOCTYPE html>                 <!-- Doctype para validar el documento --> 
+<html>
+<head>                          <!-- Cabecera --> 
+ <meta charset='utf-8'>
+ <meta http-equiv='X-UA-Compatible'
+content='IE=edge'>
+ <title>Titulo Página</title>
+ <meta name='viewport'
+content='width=device-width,
+initial-scale=1' >
+ <link rel='stylesheet' type='text/css'
+media='screen' href='main.css'>
+ <script src='main.js'></script>
+</head>
+<body>                          <!-- Cuerpo --> 
+
+</body>
+</html>                         <!-- Etiquetas de apertura y cierre --> 
 
 
-    Pueden ser: 
-    
-    + Públicas
+<!-- Ejemplo HTML --> 
+``````
+----
 
-    + Privadas
+Como se puede observar la etiqueta **raíz** del documento es **< html >**. Esta etiqueta será la **raíz del documento**; permite tener una serie de **atributos** comunes a todas las etiquetas HTML.
 
-      ```<!NOTATION nombre SYSTEM “URI”>```
+| ETIQUETA | DESCRIPCIÓN  |
+|----------|----------|
+| class    | Identifica la clase para agrupar estilos.   |
+| contentEditable   | El contenido es editable  | 
+| hidden   | No se representa en el navegador |
+| id    | Identificador del elemento   |
+| lang    | Lenguaje que esta escrito   |
+| spellcheck    | El elemento debe ser analizado para la ortografía   |
+| style    | asigna un estilo   |
+| tabindex    | Orden de selección de elementos   |
+| title    | Información Extra |
+| translate    | Determina si un elemento debe ser traducido  |
 
-      ```<!NOTATION nombre PUBLIC “id_publico”>```
 
-      ```<!NOTATION nombre PUBLIC “Id_publico” “URI”>```
- 
--------  
-  + **Elementos**: Un elemento en DTD, define la estructura de uno o varios elementos que contienen el documento.
-  
-    Para definirlo se usa la siguiente sintaxis: ```<!ELEMENT nombreElemento (contenido)>```
-
-
-    Dónde contenido puede ser:
-
-      + **EMPTY:** Vacío.
-      + **ANY:** Cualquier valor.
-      + **(#PCDATA):** Elementos de tipo carácter.
-      + **(nombreElemento):** Elemento hijo.
-      + **(nombreElemento1,NombreElemento2,...):** Lista de elementos hijos.
- 
-    Dentro de cada **elemento** podemos definir diferentes **cardinalidades**:
-
-| Notación | Descripción  | carácter |
-|----------|----------|----------|
-| (Elemento)    | Una única ocurrencia    | ```<!ELEMENT aviso (mensaje)>```   |
-| (Elemento+)    | Una o más repeticiones   | ```<!ELEMENT aviso (mensaje+)>```  |
-| (Elemento*)   | 0 o más ocurrencias   | ````<!ELEMENT aviso (mensaje*)>````   |
-| (Elemento1,E2,E3)    | Deben aparecer todos los elementos en la lista    | ```<!ELEMENT mensaje( de,para,mensaje)>```  |
-| (Elemento1/E2/)    | Deben de contener uno u otro elemento   | ```<!ELEMENT mensaje( de,para,mensaje)>``|
 
 -----
   + **Atributos**: Para definir un atributo con DTD, podemos usar la siguiente **sintaxis**:
