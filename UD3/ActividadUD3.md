@@ -2,7 +2,7 @@
 
 ![Alt text](image.png)
 
-## - **Indice** ##
+## - **INDICE** ##
 + **HTML y su evolución**
 
 + **XHTML diferencias, ventajas y desventajas con respecto a HTML**
@@ -24,59 +24,73 @@
   + **Listas, tablas y Formularios**
   + **Elementos Multimedia para HTML5**
 + **Herramientas de edición y desarrollo web**
------------------------------------------
+
 
 ## - **HTML y su evolución** 
 
-En esta **UD2**, voy a profundizar en el uso y validación de documentos XML. En el siguiente apartado veremos el principal uso de la validación de documentos XML mediante dos principales estandares; **DTD** y **XML Schema**. 
-Ambos cumplen el mismo objetivo, **validar la estructura y el contenido** de un documento XML, aunque cada uno se forma de **diferente** manera.
+En esta **UD3**, voy a profundizar en uno de los lenguajes de marcas mas famosos y usados en el mundo **HTML**. Comenzaré hablando a modo de introducción sobre **HTML** para luego mas tarde abarcar su estructura, principales usos, su cuerpo...
 
-Un documento XML esta formado de manera **correcta** cuando se cumplen los siguientes puntos.
+**¿Donde se usa HTML?**
 
-+ **Tiene un único elemento raíz.**
+HTML es un lenguaje de marcas el cual permite estructurar mediante **etiquetas** una página **web**.
 
-+ **Todos los elementos deben estar cerrados.**
+Cuando decimos **web** nos referimos a la **World Wide Web**, el cual es el servido de la **red Internet** más popular. Esta permite **compartir** documentos entre personas con **independencia** de la plataforma o **sistema operativo**.
 
-+ **Los elementos tienen que estar anidados correctamente; no se pueden
-intercalar aperturas y cierres.**
+El **correo electrónico** junto con la **web** son los servicios **más utilizados** y por los que ha tenido tanta **popularidad Internet**.
 
-+ **Todos los valores de los atributos están entrecomillados.**
 
-+ **Los nombres de elementos y atributos, deben cumplir sus respectivas reglas.**
  
+## - **Evolución de HTML**
 
-A continuación veremos en concreto a los dos **validadores de XML** mencionados anteriormente y sus principales **caracteriticas**:
+Fue diseñado inicialmente en el año **1991** como parte del **CERN**, ha tenido varias versiones y diferentes **implantaciones**; veamos algunas de ellas:
 
-
-###  **DTD:**
-
-**DTD (Document Type Definition**), es una serie de reglas que van a permitir validar que la estructura de un documento es válida.
-
-Las reglas contenidas en un DTD tienen que ver con la **estructura del documento** (elementos, atributos,entidades...); aunque tiene algunas limitaciones que se pueden suplir usando **XML Schema**.
- 
-
- DTD esta compuesto por:
+| Año | Versión  | Observaciones |
+|----------|----------|----------|
+| 1991    | Diseñado inicial   | ```Incluye 18 etiquetas se considera dialecto SGML```   |
+| 1992   | HTML 1.1  | ```Primer Borrador```  |
+| 1995   | HTML 2.0   | ````Recomendación W3C````   |
+| 1997    | HTML 3.2   | ```Recomendación W3C```  |
+| 1997    | HTML 4.0   | ```Recomendación W3C```|
+| 1999    | HTML 4.1   | ```Recomendación W3C```|
+| 2000    | XHTML   | ```Publicado como recomendación del W3C. Tiene como objetivo sustituir a HTML pero se desarrolló el estándar HTML 5 por otro lado```  |
+| 2014    | HTML 5.0   | ```Recomendación W3C```|
+| 2016    | HTML 5.1 | ```Recomendación W3C```|
+| 2017    | HTML 5.2   | ```Recomendación W3C```|
 
 ----
-  + **Entidades**: Como hemos comentado en XML, se pueden definir entidades dentro de un DTD; que permiten usar esa entidad para establecer un valor.
-Las entidades pueden ser:
-    + Internas: Definidas en el propio DTD
+###  **¿XHTML?**
 
-      ```<!ENTITY nombreEntidad “valor”>```
+**XHTML** es un estándar que extiende HTML con las propias características del **metalenguaje XML**. Por ello, sigue las mismas reglas del mismo (XML) **a diferencia** de HTML.
 
-    + Externas: Definidas en un fichero externo. Pueden ser públicas o privadas. 
-    
-      + Públicas: 
-      
-      ```<!ENTITY nombreEntidad PUBLIC “id_publico” “URI/URL”>```
-        
-      + Privadas: 
-      
-      ```<!ENTITY nombreEntidad SYSTEM “URI/URL”>```
+Su estructura es **similar** al propio HTML pero con **algunas diferencias**:
 
+  + **Las etiquetas deben estar bien animadas.**
+  + **Todas las etiquetas deben estar cerradas.**
+  + **Todas las etiquetas y atributos van en minúscula.**
+  + **No puede haber texto sin estar dentro de una etiqueta.**
+  + **Todos los atributos deben tener valor e ir entre comillas.**
+  + **No se deben insertar elementos de bloque dentro de elementos inline.**
+  + **Los scripts y estilos deben ir dentro de un CDATA**
+  
+  
 
-*Para usar una entidad:
-**&nombreEntidad**;*
+----
+##  **NAVEGADOR**
+
+El **navegador** es el programa diseñado para la **visualización HTML** que permite tener una versión más legible y visual al usuario.
+
+Algunos de los navegadores más **usados**:
+
+  + Mozilla Firefox
+
+  + Google Chrome
+  
+  + Microsoft Edge
+
+  + Opera
+
+  + Safari
+
 
  ---------------
   + **Anotaciones**: Una **anotación**, nos permite identificar el formato de entidades que no son XML y que no se van a procesar; como puede ser el valor de un atributo.
