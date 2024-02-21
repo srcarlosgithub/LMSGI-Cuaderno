@@ -176,3 +176,8 @@ La etiqueta que recibe la cabecera de HTML es --> **< head>** la cual debe de ce
   + **Style**: Indica el estilo a utilizar.
   + **Link**: Enlace con otro documento (para estilos).
   + **Script**: Añade Scripts basado en lenguaje para Scripts.
+
+Elementos detallados con profundidad en la carpeta ***Elementos HEAD***.
+
+  ------
+
