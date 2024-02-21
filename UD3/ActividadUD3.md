@@ -163,9 +163,16 @@ Al igual que en **XML**, se pueden utilizar **comentarios**.
 <!-- Esto es un comentario -->
 ````````
 ## - **CABECERA HTML**:
+![Alt text](image-3.png)
 
-  + **Title**
-  + **Meta**
-  + **Style**
-  + **Link**
-  + **Script**
+La **cabecera** dentro de un documento **HTML** tiene la principal **función** establecer información **del propio** documento a través de **metadatos//scripts//estilos** del mismo.
+
+
+La etiqueta que recibe la cabecera de HTML es --> **< head>** la cual debe de cerrarse con --> **< /head>**. Como **principales elementos** del **< head>** encontramos los siguientes:
+
+
+  + **Title**: Indica el título de la página.
+  + **Meta**: Define los metadatos de la página.
+  + **Style**: Indica el estilo a utilizar.
+  + **Link**: Enlace con otro documento (para estilos).
+  + **Script**: Añade Scripts basado en lenguaje para Scripts.
