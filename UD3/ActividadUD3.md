@@ -162,7 +162,7 @@ Al igual que en **XML**, se pueden utilizar **comentarios**.
 ````HTML
 <!-- Esto es un comentario -->
 ````````
-## - **CABECERA HTML**:
+##  **CABECERA HTML**:
 ![Alt text](image-3.png)
 
 La **cabecera** dentro de un documento **HTML** tiene la principal **función** establecer información **del propio** documento a través de **metadatos//scripts//estilos** del mismo.
@@ -181,3 +181,47 @@ Elementos detallados con profundidad en la carpeta ***Elementos HEAD***.
 
   ------
 
+### **CUERPO HTML**
+![Alt text](image-4.png)
+
+El **cuerpo** o conocido por su etiqueta **< body/>** es uno de los elementos principales de la **estructura de HTML** en el cual se mostrarán todos los datos que serán representados al usuario.
+
+````HTML
+<html>
+ <head><title>Pagina de Carlos</title></head>
+    <body>
+      <p>Hola, Harambe!</p>
+    </body>
+</html>
+````````
+
+Podemos dividir el **cuerpo** en dos tipos de **etiquetas o elementos** fundamentales:
+
++ **Elementos de Bloque**: *Ocupan todo el espacio de su elemento **padre** (contador) y salvo excepciones permiten contener otros elementos.*
++ **Elementos de línea**: *Ocupan **sólo el espacio** que ocupa su contenido; contienen datos u otros elementos de línea.*
+
+Elementos detallados con profundidad en la carpeta **Elementos BLOQUE/LÍNEA**.
+
+-----
+
+### **ENCABEZADOS y PARRAFOS**
+
+Los **encabezados** es un elemento de ***Bloque*** que muestra el **título** de una sección o tema. En HTML hay disponibles hasta **7** encabezados:
+
+````HTML
+<h1>Encabezado de primer nivel</h1>
+<h2>Encabezado de segundo nivel</h2>
+<h3>Encabezado de tercer nivel</h3>
+<h4>Encabezado de cuarto nivel</h4>
+<h5>Encabezado de quinto nivel</h5>
+<h6>Encabezado de sexto nivel</h6>
+<h7>Encabezado de séptimo nivel</h7>
+````````
+![Alt text](image-5.png)
+
+En cuanto a los párrafos se **definen** mediante la etiqueta **< p>** y se usa para **representa** información normalmente de texto.
+
+````HTML
+  <p>Hola, Harambe!</p>
+````````
+![Alt text](image-6.png)
