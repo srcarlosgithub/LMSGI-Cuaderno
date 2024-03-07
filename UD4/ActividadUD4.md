@@ -1,42 +1,132 @@
 # ACTIVIDAD UD4 - Estilos en documentos Web. 
 
-![](https://cdn.iconscout.com/icon/free/png-256/free-xml-file-2330558-1950399.png)
+![Alt text](image.png)
 
 
 ## - **Indice** ##
-+ **Documentos XML, estructura:**
-  + **Declaración o prólogo**   
-  + **Elementos**
-  + **Atributos**
-  + **Comentarios**
-  + **Espacios de Nombres**
-  + **Entidades**
-  + **CDATA**
-
-+ **Validación de documentos**
-  + **DTD**
-    + **Entidades**
-    + **Anotaciones**
-    + **Elementos**
-    + **Atributos** 
-  + **XMLSchema**
-    + **Definición**
-    + **Estructura Básica**
-    + **Elementos Locales y Globales**
-    + **Elementos Simples**
-    + **Elementos Complejos**
-    + **Subelementos**
-    + **Atributos**
-    + **Restricciones**
-    + **Tipos de Datos**
-    + **Comentarios en XMLSchema**
-
++ **CSS, Qué es:**
++ **Versiones CSS**
++ **Como se agrega CSS a un documento HTML**
++ **Selectores CSS (incluyendo pseudoclases y pseudoselectores)**
++ **Tipos de datos y unidades CSS**
++ **Versiones CSS:** 
+  + **Modelo de cajas**
+  + **Flex y Grid**
+  + **FLoat y position**
+  + **Propiedades de texto**
+  + **Propiedades de Listas**
+  + **Diseño adaptativo (Media Queries)**
 -----------------------------------------
 
-## - **Validación de documentos** 
+## - **CSS: Qué es?** 
 
-En esta **UD2**, voy a profundizar en el uso y validación de documentos XML. En el siguiente apartado veremos el principal uso de la validación de documentos XML mediante dos principales estandares; **DTD** y **XML Schema**. 
-Ambos cumplen el mismo objetivo, **validar la estructura y el contenido** de un documento XML, aunque cada uno se forma de **diferente** manera.
+En esta **UD4**, voy a profundizar en el uso de **CSS**, un lenguaje de marcas con el que damos formato y **estilo** a nuestros documentos **HTML**. En el siguiente apartado veremos **qué es** realmente **CSS** su **uso principal**, su relacción con **HTML** y un pequeño **ejemplo**.
+
+También como **puntos de aprendizaje** principales que quiero llevar acabo en esta unidad son:
+
++ **Estudiar la estructura y sintaxis CSS**
++ **Aprender como se aplica CSS a los documentos**
++ **Presentar los tipos utilizados para definir colores, tipos de letras y unidades de medida**
++ **Estudiar las propiedades que podemos modificar desde los estilos CSS**
+
+El uso de **HTML** sin formato esta **obsoleto** a dia de hoy, es normal ver documentos web HTML acompañados con un formato de estilo con **CSS** **(Cascade Style Sheets)**.
+
+**CSS** permite añadir **estilo** a un documento web **HTML** mejorando su **presentación** y haciendo más **visual** la **información**.
+
+![Alt text](image-1.png)
+
+Es mantenido por **W3C** al igual que **HTML Y XML**. Comenzó en **1996** y hoy en dia su uso es **indispensable** para el desarrollo de cualquier **página web**. Ha habido diferentes **versiones**:
+
+| Año | Versión  | Descripción |
+|----------|----------|----------|
+| 1996    | CSS1    | El W3C ya no soporta esta versión   |
+| 1998    | CSS2   | El W3C ya no soporta esta versión |
+| 2011   | CSS2.2   | Corrección de errores de la versión 2   |
+| 2012    | CSS3    | Esta versión la divide en modulos. Por lo que no hay fecha de cambio.  |
+
+- ### **Sintaxis:**
+
+Podemos **dividir** la sintaxis de **CSS** en:
+
++ **Selectores:** Herramientas que permiten seleccionar el **elemento o elementos** en los cuales se van a aplicar las reglas.
+
++ **Declaraciones:** Son las **reglas** para aplicar a los distintos elementos. Normalmente tienen una estructura **clave valor**.
+
++ **Comentarios:** Se aplican mediante los caracteres /* */
+
+**EJEMPLO:**
+
+```CSS
+body{
+ color: green;
+}
+```
+
+- ### **Agregar CSS:**
+
+Podemos añadir estilos con **CSS** a un documento **HTML** de las **siguientes maneras**:
+
+- Como documento **externo** mediante la **etiqueta link**:
+
+```HTML
+<link rel=”stylesheet” href=”estilos.css” >
+```
+
+- Como **elemento style** dentro de la **cabecera** del documento:
+
+```HTML
+<style>
+…
+</style>
+```
+
+- Como **elemento en línea** con la etiqueta **style**:
+
+```HTML
+<p style=”color:white”>...</p>
+```
+
+-  ### Prioridades de uso con CSS
+
+Podemos establecer una serie de **valores** para cada regla, para establecer la **prioridad**.
+
+- **inherit**: Activa la herencia, dando prioridad al valor heredado del elemento padre.
+- **initial**: El valor tomado será el valor **por defecto**.
+- **unset**: Reestablece al **valor natural**.
+- **revert**: Reestablece el valor propiedad al valor que hubiera **obtenido** si no se hiciese el **cambio**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Un documento XML esta formado de manera **correcta** cuando se cumplen los siguientes puntos.
 
