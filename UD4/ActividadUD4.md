@@ -118,6 +118,8 @@ También existen **combinaciones o agrupaciones**:
   - Hermanos adyacentes: Elemento hermano a otro pero adyacente; ejemplo: A+B.
   - Descendientes: Elemento descendente;Ejemplo A B.
 
+  ![Alt text](image-2.png)
+
 ----
 
 **Pseudoclases**: Es un modificador que se añade a un **selector** para que solo se **aplique** cuando dicho elemento pase a un estado **específico**; 
