@@ -59,12 +59,17 @@ Su extensión puede ser **.xml** o **.rss**
 
 En el elemento **channel**; tendremos los siguientes elementos obligatorios:
 
-| Elemento | Descripción  | Descripción |
-|----------|----------|----------|
-| 1996    | CSS1    | El W3C ya no soporta esta versión   |
-| 1998    | CSS2   | El W3C ya no soporta esta versión |
-| 2011   | CSS2.2   | Corrección de errores de la versión 2   |
-| 2012    | CSS3    | Esta versión la divide en modulos. Por lo que no hay fecha de cambio.  |
+| Elemento | Descripción  | 
+|----------|----------|
+| < tittle >    | Titulo del canal    | 
+| < link >    | Enlace al sitio web   | 
+| < description >   | Descripción del contenido | 
+| < language >    | Idioma en el que está escrito el canal |
+| < copyright >    | Aviso relativo a los derechos de autor |
+| < category >    | Una o más categorias a la que pertenece el canal |
+| < generator >    | Nombre del programa que ha generado el canal | 
+
+Además de estos elementos, podemos  
 
 - ### **Sintaxis:**
 
