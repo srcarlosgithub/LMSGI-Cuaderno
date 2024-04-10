@@ -4,40 +4,62 @@
 
 
 ## - **Indice** ##
-+ **CSS, Qué es:**
-+ **Versiones CSS**
-+ **Como se agrega CSS a un documento HTML**
-+ **Selectores CSS (incluyendo pseudoclases y pseudoselectores)**
-+ **Tipos de datos y unidades CSS**
-+ **Versiones CSS:** 
-  + **Modelo de cajas**
-  + **Flex y Grid**
-  + **FLoat y position**
-  + **Propiedades de texto**
-  + **Propiedades de Listas**
-  + **Diseño adaptativo (Media Queries)**
++ **Sindicación de contenidos en la web**
++ **Sindicación de contenidos**
++ **RSS (Sintaxis y ejemplos)**
++ **Atom (sintaxis y ejemplos)**
++ **Herramientasde validación de canales de sindicación**
++ **Añadir canales de sindicación a una web** 
++ **Agregores de canales**
++ **Canales de sindicación**
 -----------------------------------------
 
-## - **CSS: Qué es?** 
+## - **Sindicación de contenidos en la web** 
 
-En esta **UD4**, voy a profundizar en el uso de **CSS**, un lenguaje de marcas con el que damos formato y **estilo** a nuestros documentos **HTML**. En el siguiente apartado veremos **qué es** realmente **CSS** su **uso principal**, su relacción con **HTML** y un pequeño **ejemplo**.
+En esta **UD5**, hablaré sobre el uso de la sindicación de contenidos en la web, viendo su importancia para poder **difundir** en **internet** el contenido de nuestra web con **HTML** y **CSS**, ya que para esto necesitaremos del uso de esta.
+
+No siempre es fácil dar con el contenido o dar a conocer nuestro contenido. Para ello las **herramientas de sindicación de contenidos** para poder difundir esta información.
 
 También como **puntos de aprendizaje** principales que quiero llevar acabo en esta unidad son:
 
-+ **Estudiar la estructura y sintaxis CSS**
-+ **Aprender como se aplica CSS a los documentos**
-+ **Presentar los tipos utilizados para definir colores, tipos de letras y unidades de medida**
-+ **Estudiar las propiedades que podemos modificar desde los estilos CSS**
++ **Conocer los fundamentos y la utilidad de los sitemas de difusión**
++ **Analizar los formatos  más utilizados en redifusión**
++ **Presentar diversas herramientas para la creación y el consumo de canales de información**
++ **Enumerar algunos canales de información interesantes de diversos ámbitos**
 
-El uso de **HTML** sin formato esta **obsoleto** a dia de hoy, es normal ver documentos web HTML acompañados con un formato de estilo con **CSS** **(Cascade Style Sheets)**.
+![alt text](image-1.png)
 
-**CSS** permite añadir **estilo** a un documento web **HTML** mejorando su **presentación** y haciendo más **visual** la **información**.
+Es mantenido por **W3C** al igual que **HTML, XML y CSS**. 
 
-![Alt text](image-1.png)
+----
 
-Es mantenido por **W3C** al igual que **HTML Y XML**. Comenzó en **1996** y hoy en dia su uso es **indispensable** para el desarrollo de cualquier **página web**. Ha habido diferentes **versiones**:
+ ## **Sindicación de contenidos:**
 
-| Año | Versión  | Descripción |
+ Los **sistemas de redifusión web** o **sindicación web** permiten liberar de trabajo a los usuarios a la hora de **proporcionar** un mecanismo de suscripción gracias al cual la información de la web llega a los usuarios **en vez de buscarla**.
+
+Algunos de estos sistemas se basan en canales de redifusión llamados **fuente web, canal web, o web feed**.
+
+Una **fuente web** es un documento el cual contiene **información básica** sobre elementos de información incluyendo referencias para **acceder a estos elementos**.
+
+Existen varios formatos basados en **XML**: como puede ser **Atom** o **RSS**.
+
+ ## **RSS:**
+
+El formato **RSS** *(Really Simple Syndication)* es un **dialecto** XML, que permite distribuir contenidos a través de la **web**.
+
+Al igual que **XML** es mantenido por la **W3C** y fue publicada su primera versión en **1997**; actualmente es **utilizada la v2.0** publicada en 2003.
+
+Su extensión puede ser **.xml** o **.rss**
+
+### **SINTAXIS**:
+
++ El elemento raíz siempre sera < rss > que tendrá el **atributo: version**  con el valor **2.0**.
+
++ Este **elemento** tendra un **subelemento** llamado < channel > por cada canal de **suscripción** que tenga la web.
+
+En el elemento **channel**; tendremos los siguientes elementos obligatorios:
+
+| Elemento | Descripción  | Descripción |
 |----------|----------|----------|
 | 1996    | CSS1    | El W3C ya no soporta esta versión   |
 | 1998    | CSS2   | El W3C ya no soporta esta versión |
