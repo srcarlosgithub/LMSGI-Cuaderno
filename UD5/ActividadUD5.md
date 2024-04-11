@@ -51,7 +51,7 @@ Al igual que **XML** es mantenido por la **W3C** y fue publicada su primera vers
 
 Su extensión puede ser **.xml** o **.rss**
 
-### **SINTAXIS**:
+- ### **Sintaxis**:
 
 + El elemento raíz siempre sera < rss > que tendrá el **atributo: version**  con el valor **2.0**.
 
@@ -69,9 +69,36 @@ En el elemento **channel**; tendremos los siguientes elementos obligatorios:
 | < category >    | Una o más categorias a la que pertenece el canal |
 | < generator >    | Nombre del programa que ha generado el canal | 
 
-Además de estos elementos, podemos  
+Además de estos elementos, podemos encontrar una o más entradas definidas con el elemento **< item >**. Cada elemento contiene:
 
-- ### **Sintaxis:**
+| Elemento | Descripción  | 
+|----------|----------|
+| < tittle >    | Titulo de la entrada    | 
+| < link >    | Enlace a la entrada   | 
+| < description >   | Descripción de la entrada | 
+| < pubDate >    | Fecha de publicación en formato RFC-822 |
+| < comments >    | Contiene la URL con los comentarios de la entrada |
+| < author >    | Dirección electrónica (email) del autor |
+
+- ### **Ejemplo RSS:**
+
+```RSS
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Carlos Home Page</title>
+  <link>https://www.carlosgithub.com</link>
+  <description>Directorio UD5 Ejemplo RSS</description>
+  <item>
+    <title>RSS Ejemplo primer articulo</title>
+    <link>https://www.carlosgithub/RSSejemplo</link>
+    <description>Articulo de RSS con ejemplo</description>
+  </item>
+</channel>
+
+</rss>
+```
 
 Podemos **dividir** la sintaxis de **CSS** en:
 
