@@ -53,9 +53,9 @@ Su extensión puede ser **.xml** o **.rss**
 
 - ### **Sintaxis**:
 
-+ El elemento raíz siempre sera < rss > que tendrá el **atributo: version**  con el valor **2.0**.
+  + El elemento raíz siempre sera < rss > que tendrá el **atributo: version**  con el valor **2.0**.
 
-+ Este **elemento** tendra un **subelemento** llamado < channel > por cada canal de **suscripción** que tenga la web.
+  + Este **elemento** tendra un **subelemento** llamado < channel > por cada canal de **suscripción** que tenga la web.
 
 En el elemento **channel**; tendremos los siguientes elementos obligatorios:
 
@@ -100,142 +100,14 @@ Además de estos elementos, podemos encontrar una o más entradas definidas con 
 </rss>
 ```
 
-Podemos **dividir** la sintaxis de **CSS** en:
+## **ATOM:**
 
-+ **Selectores:** Herramientas que permiten seleccionar el **elemento o elementos** en los cuales se van a aplicar las reglas.
+Atom es otro **formato de sindicación** de contenidos basado en **XML**. Los ficheros **Atom** suelen tener extensión **.xml** o **.atom**.
 
-+ **Declaraciones:** Son las **reglas** para aplicar a los distintos elementos. Normalmente tienen una estructura **clave valor**.
+- ### **Sintaxis:**
 
-+ **Comentarios:** Se aplican mediante los caracteres /* */
+La sintaxis de Atom es la siguiente:
 
-**EJEMPLO:**
-
-```CSS
-body{
- color: green;
-}
-```
-----
-
- ### **Agregar CSS:**
-
-Podemos añadir estilos con **CSS** a un documento **HTML** de las **siguientes maneras**:
-
-- Como documento **externo** mediante la **etiqueta link**:
-
-```HTML
-<link rel=”stylesheet” href=”estilos.css” >
-```
-
-- Como **elemento style** dentro de la **cabecera** del documento:
-
-```HTML
-<style>
-…
-</style>
-```
-
-- Como **elemento en línea** con la etiqueta **style**:
-
-```HTML
-<p style=”color:white”>...</p>
-```
----
-
-  ### **Prioridades de uso con CSS**
-
-Podemos establecer una serie de **valores** para cada regla, para establecer la **prioridad**.
-
-- **inherit**: Activa la herencia, dando prioridad al valor heredado del elemento padre.
-- **initial**: El valor tomado será el valor **por defecto**.
-- **unset**: Reestablece al **valor natural**.
-- **revert**: Reestablece el valor propiedad al valor que hubiera **obtenido** si no se hiciese el **cambio**.
-----
-
- ### **Selectores CSS**
-
-Un **selector** es una regla para **seleccionar** uno o varios elementos que **modificarán** sus **reglas**; podemos dividirlos en los siguientes **tipos**:
-
-- **Universal**: selecciona todos los elementos. EJ: *
-- **Tipo**: tipo de elemento. EJ: h1
-- **Clase**: elementos de una determinada clase.
-- **Identificador**: elemento con un identificador en concreto. EJ: #elemento
-- **Atributo**: elemento con un atributo en concreto. EJ: ```input[type=”submit”]```
-
-También existen **combinaciones o agrupaciones**:
-
-- **Agrupación**: aplicará las reglas a todos esos elementos o clases. EJ: h1,h2,h3.
-
-- **Combinación**: indica que sólo aplicará a la combinación de varios elementos. Podemos clasificarlos como:
-  - Hermanos: Elemento hermano a otro; ejemplo: A~B.
-  - Hijos: Elemento Hijo a otro; ejemplo: A>B.
-  - Hermanos adyacentes: Elemento hermano a otro pero adyacente; ejemplo: A+B.
-  - Descendientes: Elemento descendente;Ejemplo A B.
-
-  ![Alt text](image-2.png)
-
-----
-
-**Pseudoclases**: Es un modificador que se añade a un **selector** para que solo se **aplique** cuando dicho elemento pase a un estado **específico**; 
-```CSS
-selector:pseudoclase{
-color: white;
-}
-```
-
-Algunas de las pseudoclases son: 
-
-- **:active:** cuando el elemento está activo.
-- **:checked:** cuando un checkbox está activo.
-- **:disabled:** cuando el elemento está deshabilitado.
-- **:focus:** Cuando el elemento tiene el foco.
-- **:hover:** Cuando el ratón pasa por encima.
-- **:visited:** Cuando el enlace apunta a una dirección ya visitada
-anteriormente
-
-**Pseudoelementos**: Se añade a un selector para **establecer** el estilo de parte de dicho elmeneto; Por ejemplo **la primera** letra o palabra.
-
-Los **pseudoelementos** pueden ser:
-
-- **::after:** Permite añadir contenido después del elemento.
-- **::before:** Permite añadir contenido antes del elemento.
-- **::first-letter:** Primera letra del primer bloque de texto.
-- **::first-line:** Primera línea del primer bloque de texto.
-- **::selection:** Modificar el estilo cuando hay parte del contenido
-seleccionado.
-
-----
-
- ### **Tipos de Datos y Unidades**
-
-En **CSS** podemos encontrar los siguientes **tipos de datos**:
-
-- **Entero**: Numeros enteros positivos y negativos.
-- **Número**: Número decimal.
-- **Dimensión**: Número con una dimensión asociada; puede ser deg **(grados)**, s (segundos) o px **(píxeles)**
-- **Porcentaje**: Indica un porcentaje o fracción el cual se indica con el símbolo **%**.
-- **Colores**: Indica un color que puede ser uno predeterminado **(green, red, white...)** valor **RGB (rgba(22,33,11,20))**, hexadecimal **(#112233)** o HSL **(Hue Saturation Lightness)** **(hsl(0,100%.50%))**.
-
-En cuanto a las **Unidades** podemos clasificarlas en **Absolutas o Relativas**.
-
-*Unidades Absolutas:*
-
-- **px**: píxeles.
-- **cm**: centímetro.
-- **mm**: mílimetro.
-- **Q**: Cuarto de mílimetro.
-- **in**: Pulgada.
-- **pt**: Puntos (1/72 in).
-- **pc**: Picas (1/16 in).
-
-*Unidades Relativas*
-
-- **em**: Tamaño letra del padre.
-- **ex**: Altura de la fuente del elemento.
-- **ch**: Ancho del carácter.
-- **rem**: Tamaño letra del elemento Raíz.
-- **lh**: Altura de la línea del elemento.
-- **vw**: 1% del ancho de ventana gráfica.
-- **vh**: 1% del alto de la ventana gráfica.
-- **vmin**: 1% de la dimensión más pequeña de la ventana gráfica.
-- **vmax**: 1% de la dimensión más grande de la ventana gráfica.
+  + El elemento raíz < feed > que se le indica el espacio de nombres **xmlns=https://www.w3.org/2005/Atom** ; además de los elementos a continuación:
+  
+   
