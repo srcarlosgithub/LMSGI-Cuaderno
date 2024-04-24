@@ -110,4 +110,79 @@ La sintaxis de Atom es la siguiente:
 
   + El elemento raíz < feed > que se le indica el espacio de nombres **xmlns=https://www.w3.org/2005/Atom** ; además de los elementos a continuación:
   
-   
+| Elemento | Descripción  | 
+|----------|----------|
+| < id >    | Identifica el canal utilizando una URL    | 
+| < tittle >    | Título del canal   | 
+| < updated >   | Fecha de la última actualización | 
+| < author >    | Indica el autor; contiene la etiqueta < name > y opcionalmente < email > y < uri > |
+| < link >    | Enlace mediante el atributo *href* al canal |
+| < author >    | Dirección electrónica (email) del autor |
+
+En el elemento raíz feed podemos encontrar los siguientes elementos opcionales:
+
+| Elemento | Descripción  | 
+|----------|----------|
+| < category >    | Categoría del canal; puede tener múltiples elementos.    | 
+| < contributor >    | Nombre o nombres del colaborador; contiene las etiquetas < name > y opcionalmente < email > o < uri >   | 
+| < generator >   | Programa que ha generado este feed. | 
+| < rights >    | Contiene información acerca de los derechos de propiedad del canal. |
+| < subtitle >    | Contiene la disposición final. |
+
+Dentro del propio Feed pueden aparecer una o varias entradas; estas se identifican por el elemento < entry >; el elemento entry aparecerán los siguientes elementos:
+
+| Elemento | Descripción  | 
+|----------|----------|
+| < id >    | Identificador de la entrada debe ser una URI    | 
+| < tittle >    | Título de la entrada   | 
+| < updated >   | Fecha de actualización | 
+| < content >    | Descripción del contenido > |
+| < author >    | Autor de la entrada; debe contener el elemento < name > y opcionalmente los elementos < email > o < uri > |
+| < link >    | Enlace a la entrada con el atributo *href* |
+| < summary >    | Resumen de la entrada |
+| < category >    | Categoría de la entrada |
+| < contributor >    | Colaborador de la entrada; debe contener el elemento < name > y opcionalmente los elementos < email > o < uri > |
+| < published >    | Fecha de publicación |
+| < link >    | Información acerca de la propiedad o los derechos de la entrada |
+
+
+- ### **Ejemplo ATOM:**
+
+```ATOM
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Example Feed</title>
+  <subtitle>A subtitle.</subtitle>
+  <link href="http://example.org/feed/" rel="self" />
+  <id>urn:uuid:60276c80-d399-11d9-b91C-00939390006</id>
+  <updated>2003-12-13T18:30:022</updated>
+
+  <entry>
+    <title>Atom-Powered Robots Run Amok</title>
+    <link href="http://example.org/2003/12/13/atom03" />
+    <link rel="alternate” type="text/html” href="http://example.org/2003/12/13at0m03.html"/>
+    <id>urn:uuid:1225c695-cfb8-4ebb-aana-SOda344efada</id>
+    <published>2003-11-09117:23:022</published>
+    <updated>2003-12-13T18:39:022</updated>
+    <summary>Some text.</summary>
+    <content type="xhtml">
+      <div xmlns="http://w.3.or9/1999/xhtaU">
+        <p>This is the entry content.</p>
+      </div>
+    </content>
+    <author>
+      <name>John Doe</name>
+      <email>johndoe@example.con</email>
+    </author>
+  </entry>
+
+</feed>
+
+```
+
+## **Validar Canales:**
+
+Podemos utilizar validadores para ver 
