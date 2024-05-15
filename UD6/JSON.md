@@ -55,7 +55,9 @@ Un valor **simple**, tiene asociado un tipo; que puede ser:
 
 + **Null**: Indica un valor nulo o vacío.
 
+**EJEMPLOS**
 
++ **Numéricos**:
 
 
 
