@@ -1,9 +1,9 @@
 
 # JSON
 
-![alt text](image-6.png)
+![alt text](image-8.png)
 
-## - **Indice** ##
+## - **Indice** 
 
 + **Definición del motor de base de datos**
 + **Instalación y configuración con Docker**
@@ -13,141 +13,147 @@
     + **Borrar**
     + **Modificar**
 
+## - **Objetivos** 
 
-## - **Definición** ##
++ **Instalar y conocer una base de datos basada en un Lenguaje de marcas**.
 
-**JSON** *(JavaScript Object Notation)* es un lenguaje de marcas que se utilizaba como parte de la representación de datos en el lenguaje **JavaScript**.
++ **Instalar y configurar una instancia de MongoDB**.
 
-Pero la **comunidad** ha extendido su uso como lenguaje de marcas **independiente**, y podemos verlo siendo **utilizado** en infinidad de usos.
++ **Utilizar la librería *pymongo* para utilizar la base de datos MondoDB**.
 
-![alt text](image-7.png)
 
-### - **Sintaxis**
+## - **Definición** 
 
-La sintaxis de **JSON** *(/jeyson)* esta basada en **etiquetas clave**: valor, separadas por comas y componiendo diferentes objetos dentro de **etiquetas** { }.
+**MongoDB** es una base de datos **NoSQL** de código **abierto** que se basa en **documentos**. Lo que principalmente le diferencia de las bases de datos **relacionales tradicionales** las cuales almacenan datos en **tablas** con *filas* y *columnas*, es que *MongoDB* almacena los datos en documentos **BSON** *(una forma binaria de JSON)*.
 
-Esta comenzaría con ````{```` seguidos de uno o varios elementos separados por , .
+Esta **estructura** de almacenamiento permite mayor **flexibilidad** y **escalabilidad**.
 
-Cada uno de los elementos, se **define** como un par de **clave-valor**, separado por : la primera parte es la clave que va entre **comillas** " " y la segunda parte es el valor.
+![alt text](image-9.png)
 
-**EJEMPLO**
+### - **Características de MongoDB**
 
-```JSON
-"nombre": "carlos"
++ **1.Modelo de documentos**: MongoDB utiliza un modelo basado  en documentos, donde cada documento es similar a un objeto
+JSON y puede contener datos anidados. Esto permite representar datos complejos y relacionados de manera natural.
+
+
++ **2.Esquema flexible**: A diferencia de las bases de datos relacionales, MongoDB no requiere que los documentos tengan un
+esquema predefinido. Los documentos dentro de una misma colección pueden tener estructuras diferentes, lo que facilita la
+adaptación a cambios en los datos.
+
+
++ **3.Consulta poderosa**: Ofrece un lenguaje de consulta rico y expresivo que permite realizar búsquedas avanzadas, filtrado, clasificación, agrupación y más. También permite operaciones de agregación similares a las funciones de
+agrupamiento en bases de datos relacionales.
+
+
+
++ **4.Escalabilidad horizontal**: Soporta la división de datos (sharding) en múltiples servidores, lo que permite manejar
+grandes volúmenes de datos y cargas de trabajo distribuidas.
+
+
++ **5.Indices**: Al igual que en otras bases de datos, Oermite crear índices en campos específicos para acelerar las consultas y mejorar el rendimiento.
+
+
++ **6.Soporte para replicación**: Ofrece replicación integrada para garantizar la disponibilidad y durabilidad de los datos.
+Los datos pueden ser replicados en diferentes nodos para garantizar la continuidad del servicio en caso de fallas.
+
+
++ **7.Compatibilidad con múltiples lenguajes**: iene controladores disponibles para una amplia variedad de lenguajes
+de programación, incluidos JavaScript, Python, Java, C#, y otros, lo que facilita su integración en aplicaciones.
+
+
+## - **Instalación y configuración con Docker**
+
+Podemos instalarlo mediante diferentes **formas** *(Local, nube, embebido, etc...)* una de las formas más **sencillas** de utilizar,  es a través de un **contendor Docker**.
+
+Existe una **imagen Docker** para *MongoDB* (*version Community*), para poder crear una **instancia** de forma sencilla, podemos lanzar las siguientes **lineas de comando**:
+
+````
+docker run --name mongodb -p 27017:27017 -d
+mongodb/mongodb-community-server:latest
+````
+
+También tenemos la opción del uso de **Docker Compose**:
+
+![alt text](image-10.png)
+
+
+## - **Mongo Express**
+
+*Mongo Express* es una **aplicación web** en la que podemos **contectar y administrar** una instancia en *MongoDB*.
+
+![alt text](image-11.png)
+
+Con *Mongo Express* podemos **realizar consultas** e **insertar** documentos.
+
+Para realizar consultas en *MongoDB*, utilizamos **JSON**:
+
+````JSON
+{“numero”: 5}
+````
+
+Esta consulta obtendría todos los **documentos** que tengan el **atributo** "numero" igual a **5**.
+
+![alt text](image-12.png)
+
+
+## - **MongoDB Consultas**
+
+*MongoDB* tiene las siguientes operaciones para trabajar con consultas **JSON**:
+
+| Operación | Operando  | Descripción | Ejemplo |
+|----------|----------|----------|---------|
+| Igual    |  :  | ```Obtienen valores iguales```   | {“distancia”: 5} |
+| No igual que    | $ne   | ```Valores distintos de```  | {“distancia: {$ne:5} |
+| Menor Que   | $lt   | ````Valores menores que````   | {“distancia”: { $lt:50}} |
+| Mayor Que     | $gt   | ```Valores mayores que```  | {“distancia”: {$gt:50}} |
+| Expresión Regular    | “$regex”   | ```Una expresión regular ```| {“origen”: {“$regex”: “^S”}} |
+
+
+## - **PyMongo**
+
+*PyMongo* es un **paquete** para el lenguaje **Python**, el cual al instalarlo nos permite poder **conectarnos** a una base de datos **MongoDB**.
+
+Podemos **instalarlo** usando el **gestor de paquetes *pip***:
+
+```
+pip install pymongo
 ```
 
-Cada elemento puede tener un **valor simple**, una **lista** o un **objeto**.
+Gracias a *pymongo* podemos conectar una **instancia** de MongoDB, con el siguiente fragmento:
 
-+ Un **valor simple**, es un objeto con un único valor.
+![alt text](image-13.png)
 
-+ Una **lista**, es uno o varios objetos dentro de las etiquetas [ ].
+En este fragmento, nos conectamos a una **instancia local** y obtenemos tanto la
+**base de datos** como una **colección**.
 
-+ Un **objeto**, es uno o varios elementos dentro de las etiquetas { }.
+### - **Insertar**
 
+Para insertar en una **colección**, podemos utilizar ```insert_one()``` insertando un **solo elemento** (utilizando un diccionario o también JSON).
 
-## - **Tipos de datos**
+También si queremos **insertar varios elementos** simultaneamente, podemos utilizar la función ```insert_many()`` pasándole una colección en JSON o diccionarios.
 
-Un valor **simple**, tiene asociado un tipo; que puede ser:
+![alt text](image-14.png)
 
-+ **Números**: Indica un número que puede ser entero o decimal (separado por . como coma decimal).
+### - **Consulta**
 
-+ **Cadenas**: Una cadena de caracteres encerrada entre " ".
+Podemos obtener todos los objetos de una **colección**, usando la función ``find()``, la cual devolverá un cursor, que podemos recorrer con un ```for``
 
-+ **Booleanos**: Sólo pueden tener el valor *true* o *false*.
+``result = mycol.find()
+for n in result:
+ print(n)``
 
-+ **Null**: Indica un valor nulo o vacío.
+También podemos utilizar un diccionario o documento en **JSON** como consulta:
 
-**EJEMPLOS**
+``query = { “address”: “fake street, 123”}
+result = mycol.find(query)
+for n in result:
+ print(n)``
 
-+ **Numéricos**:
+### - **Modificar o Borrar**
 
-```JSON
-{"edad": "20"}
-```
+De igual manera, podemos **modificar o borrar elementos** usando las funciones ``update_one`` o ``delete_one`` (también está la versión ``_many``)
 
-+ **Cadenas**:
-
-```JSON
-{"nombre": "carlos"}
-```
-
-+ **Booleanos**:
-
-```JSON
-{"Venta": true}
-```
-
-+ **Nulos**:
-
-```JSON
-{"segundo nombre": null}
-```
-
-## - **Objetos Compuestos**
-
-Los **objetos** en JSON son un **conjunto de subelementos** que componen en sí a **elementos**. 
-
-Diciendolo de otra manera, son **elementos compuestos**. Estos se **definen** dentro de las etiquetas  ````{ }````.
-
-```JSON
-{"primernombre":"Carlos" , "segundonombre":"Sanchez"}
-```
-
-## - **Listas**
-
-Las **Listas**, o también conocidas como **Arrays** son un conjunto de elementos que tienen una **posición** u **índice**. Estas son definidas dentro de los elementos  ````[ ]```` y cada elemento está separado por comas.
-
-```JSON
-"empleados":[
-{"primernombre":"Carlos" , "primerapellido":"Sanchez"}
-{"primernombre":"Victor" , "primerapellido":"Suarez"}
-{"primernombre":"Juan" , "primerapellido":"Sanchez"}
-]
-```
-
-## - **Ejemplo JSON**
-
-```JSON
-{
-    "Pedidos": [
-        {
-            "Fecha":"08-05-2024",
-            "id":"01",
-            
-            "productos": [
-                {
-                    "nombre": "pedido1",
-                    "referencia":"REF-P-01",
-                    "precio":"99.99€"
-                }
-            ],
-
-            "cliente": [
-                {
-                    "Nombre":"Carlos",
-                    "DNI":"78321237G",
-                    "Dirección":"C.Aguadulce N 100"
-                }
-            ],
-
-            "lineapedido": [
-                {
-                    "referencia":"REF-P-01",
-                    "cantidad":"2"
-                }
-            ]
-        }
-    ]
-}
-```
-
-## - **Aplicaciones JSON**
-
-JSON tiene infinidad de **aplicaciones**:
-
-+ **Almacenar información**.
-
-+ **Configuración de aplicaciones**.
-
-+ **Intercambio de aplicaciones a través de servicios HTTP (o servicios web REST)**.
-
+``query = { “address”: “fake street, 123”}
+mycol.update_one(query, newvalues)
+#Borrar todos los elementos
+mycol.delete_many({})``
